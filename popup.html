@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 240px;
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    h3 { margin-top: 0; color: #333; }
+    .input-group {
+      margin-bottom: 12px;
+      text-align: left;
+    }
+    label {
+      font-size: 12px;
+      font-weight: bold;
+      color: #555;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      color: #fff;
+      border: none;
+      padding: 12px 15px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    #startBtn { background-color: #000; }
+    #startBtn:hover { background-color: #333; }
+    #stopBtn { background-color: #ff3b30; display: none; }
+    #stopBtn:hover { background-color: #d63025; }
+    #counterContainer {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      display: none;
+    }
+    #counter { font-size: 24px; font-weight: bold; color: #000; }
+    #status { margin-top: 10px; font-size: 12px; color: #666; }
+  </style>
+</head>
+<body>
+  <h3>Threads Cleaner</h3>
+  
+  <div class="input-group" id="userGroup">
+    <label for="usernameInput">Nhập chính xác Username của bạn:</label>
+    <input type="text" id="usernameInput" placeholder="Ví dụ: buivanhung.369">
+  </div>
+
+  <button id="startBtn">Bắt đầu xóa</button>
+  <button id="stopBtn">Dừng quét</button>
+  
+  <div id="counterContainer">
+    <div>Đã xóa thành công:</div>
+    <div id="counter">0</div>
+  </div>
+  
+  <div id="status">Sẵn sàng quét dữ liệu...</div>
+  <script src="popup.js"></script>
+</body>
+</html>

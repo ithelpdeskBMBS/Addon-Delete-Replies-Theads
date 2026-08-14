@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Threads Ghost Replies Deleter",
+  "version": "2.0",
+  "description": "Tự động zoom 50% và xóa các phản hồi mồ côi bằng Content Script",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": [
+    "https://www.threads.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.threads.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
